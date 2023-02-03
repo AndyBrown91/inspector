@@ -34,6 +34,7 @@ target_link_libraries(GuiAppExample
         juce::juce_recommended_lto_flags
         juce::juce_recommended_warning_flags)
 
+set(MELATONIN_COMPILE_BINARY_DATA OFF)
 add_subdirectory (melatonin_inspector)
 
 target_link_libraries (GuiAppExample PRIVATE Melatonin::Inspector)
